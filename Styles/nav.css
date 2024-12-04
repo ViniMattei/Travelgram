@@ -18,3 +18,26 @@ nav ul li:last-child img {
   width: 40px;
   height: 40px;
 }
+
+@media (max-width: 768px) {
+  nav {
+    padding: 1rem;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 0;
+  }
+
+  #primary-menu li:nth-child(2) a {
+    display: none;
+  }
+
+  #primary-menu li:nth-child(3) a {
+    display: none;
+  }
+
+  #primary-menu li:nth-child(4) a {
+    margin-left: 1rem;
+  }
+}

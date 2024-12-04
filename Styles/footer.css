@@ -3,7 +3,24 @@ footer {
   padding-block: 24px;
   gap: 24px;
   font: 14px/150% var(--font-famaly);
+  justify-content: space-between;
 }
 footer span:nth-child(1) {
   margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  footer.container {
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.875rem;
+  }
+
+  footer .footer-links {
+    flex-direction: row;
+  }
+
+  footer.container span {
+    margin: 0 8px 0;
+  }
 }

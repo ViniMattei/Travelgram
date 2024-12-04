@@ -10,3 +10,19 @@ main img {
   height: 286px;
   object-fit: cover;
 }
+
+@media (max-width: 768px) {
+  .container {
+    padding-inline: 16px;
+  }
+
+  main {
+    max-width: 360px;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  main img {
+    width: 100%;
+  }
+}
